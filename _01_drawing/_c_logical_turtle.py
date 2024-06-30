@@ -34,11 +34,12 @@ if __name__ == '__main__':
     window.setup(width=0.75, height=0.8, startx=0, starty=0)
     
     # 1. Make a new turtle
-    
+    turtle.Screen()
     # 2. Make your turtle's shape 'turtle', .shape('turtle')
-    
+    turtle.shape('turtle')
     # 3. Set your turtle's color using .color('green') and .pencolor('blue')
-    
+    turtle.color('green')
+    turtle.pencolor('blue')
     # 4. Set and new width, length, and outline of our turtle
     #    my_turtle.turtlesize(stretch_wid=10, stretch_len=10, outline=4)
 
