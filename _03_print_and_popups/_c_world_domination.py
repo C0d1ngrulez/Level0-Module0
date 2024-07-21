@@ -7,10 +7,12 @@ if __name__ == '__main__':
     # Hide the window using the window's .withdraw() method
     window.withdraw()
     # 1. Ask the user if they know how to write code.
-    simpledialog.askstring(title='Greeter', prompt='Do you know how to write code?')
+    answer=simpledialog.askstring(title='Greeter', prompt='Do you know how to write code?')
     # 2. If they say "yes", tell them they will rule the world in a message box pop-up.
-    simpledialog.askstring(title='Greeter', prompt='If you do, you will eventually rule the world!')
+    if answer=="yes":
+        simpledialog.askstring(title='Greeter', prompt='You will eventually rule the world!')
     # 3. Otherwise, tell them to sign up for classes at The League in an error box pop-up.
-    simpledialog.askstring(title='Greeter', prompt='If not, sign up for classes at the League!')
+    else:
+        simpledialog.askstring(title='Greeter', prompt='Then sign up for classes at the League!')
     # Run the window's .mainloop() method
-    window.mainloop()
+        window.mainloop()

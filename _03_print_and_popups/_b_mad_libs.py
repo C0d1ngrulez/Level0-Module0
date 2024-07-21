@@ -26,17 +26,17 @@ if __name__ == '__main__':
     # player.
     # Hint: You will need to add more + signs to join the variables to the
     #       other parts of the story.
-    adjective='aggressive'
-    liquid='water'
-    body_part='leg'
-    verb='swimming'
-    place='shore'
+    adjective=simpledialog.askstring(title='adjective', prompt='enter an adjective')
+    liquid=simpledialog.askstring(title='liquid', prompt='enter a liquid ')
+    body_part=simpledialog.askstring(title='body part', prompt='enter a body part')
+    verb=simpledialog.askstring(title='verb', prompt='enter a verb')
+    place=simpledialog.askstring(title='place', prompt='enter a place')
     story = (
-        f"Piranhas are more {'aggressive'} during the day, so cross the river at\n"
-        f"night. Piranhas are attracted to fresh {'water'} and will most\n"
-        f"likely take a bite out of your {'leg'} if you {'swimming'}. Whatever\n"
+        f"Piranhas are more {adjective} during the day, so cross the river at\n"
+        f"night. Piranhas are attracted to fresh {liquid} and will most\n"
+        f"likely take a bite out of your {body_part} if you {verb}. Whatever\n"
         "you do, if you have an open wound, try to find another way to get\n "
-        f"back to the {'shore'}. Good luck!"
+        f"back to the {place}. Good luck!"
     )
 
     # Make a pop-up that contains the final story. The \n escape characters add

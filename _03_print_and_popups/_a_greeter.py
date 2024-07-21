@@ -9,13 +9,13 @@ if __name__ == '__main__':
     window.withdraw()
     # Ask the user for their name and save it to a variable
     # name = simpledialog.askstring(title='Greeter', prompt="What is your name?")
-    simpledialog.askstring(title='Greeter', prompt='What is your name?')
+    name = simpledialog.askstring(title='Greeter', prompt='What is your name?')
     # Show a message box with your message using the .showinfo() method
-    window.showinfo()
+    messagebox.showinfo(message='hello'+name)
     # Print your message to the console using the print() function
-    print()
+    print('hello'+name)
     # Show an error message using messagebox.showerror()
-    messagebox.showerror()
+    messagebox.showerror(message='error')
     # Run the window's .mainloop() method
     window.mainloop()
     pass
