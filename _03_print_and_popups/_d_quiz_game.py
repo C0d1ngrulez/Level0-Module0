@@ -16,13 +16,28 @@ if __name__ == '__main__':
     if answer == "100":
         #      // 4.  if the user's answer was correct, add one to their score
         simpledialog.askstring(title='Greeter', prompt='Correct!')
-
+        score += 10
     # MAKE MORE QUESTIONS. Ask more questions by repeating the above
     #      // Option: Subtract a point from their score for a wrong answer
     else:
         simpledialog.askstring(title='Greeter', prompt='Incorrect!')
+
+    answer = simpledialog.askstring(title='Greeter', prompt='What is 100+20-10=?')
+    if answer == "110":
+        simpledialog.askstring(title='Greeter', prompt='Correct!')
+        score += 10
+    else:
+        simpledialog.askstring(title='Greeter', prompt='Incorrect!')
+
+    answer = simpledialog.askstring(title='Greeter', prompt='Who is the best marvel super hero?')
+    if answer == "Wolverine":
+        simpledialog.askstring(title='Greeter', prompt='Nice')
+        score += 10
+    else:
+        simpledialog.askstring(title='Greeter', prompt='Fair enough')
+
     # After all the questions have been asked, tell the user their final score
     # remember to convert your variable to a string using the str() function
-
-        # Run the window's .mainloop() method
-        window.mainloop()
+    messagebox.showinfo(message=score)
+    # Run the window's .mainloop() method
+    window.mainloop()
